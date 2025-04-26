@@ -38,5 +38,15 @@ def process():
         if folder.is_dir():
             for child in sorted(folder.iterdir(), key=lambda x: x.name):
                 pass  # filesystem order isn’t guaranteed; git handles it
+
+    catalog = []
+    for path in OUT_DIR.rglob("index.json"):
+        parts = path.relative_to(OUT_DIR).parts
+        author, name, version = parts[0], parts[1], parts[2]
+        catalog.append({"author": author, "name": name, "version": version,
+                        "url": "/".join(parts)})
+
+    (OUT_DIR / "catalog.json").write_text(json.dumps(catalog, indent=2))
+
 if __name__ == "__main__":
     process()
