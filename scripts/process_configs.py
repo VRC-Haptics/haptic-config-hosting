@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 import json, pathlib, re, shutil, sys
 from jsonschema import Draft202012Validator 
-from pathlib import Path
-ROOT = Path(__file__).resolve().parent.parent   # repo root
-SCHEMA_PATH = ROOT / "config.schema.json"
+ # pip install jsonschema
+SCHEMA_PATH = "config.schema.json"
 RAW_DIR     = pathlib.Path("configs")
 OUT_DIR     = pathlib.Path("site")           # artifact root for Pages
 
-schema = json.loads(SCHEMA_PATH.read_text())
+schema = json.loads(SCHEMA_PATH)
 validator = Draft202012Validator(schema)
 
 def validate_file(path: pathlib.Path):
