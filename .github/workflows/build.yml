@@ -26,6 +26,7 @@ jobs:
 
       # Validate + transform
       - name: Process configs
+        working-directory: ${{ github.workspace }}
         run: python scripts/process_configs.py
 
       # Commit the generated /site folder back to the repo (optional)
