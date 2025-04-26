@@ -43,7 +43,7 @@ def process():
     for path in OUT_DIR.rglob("index.json"):
         parts = path.relative_to(OUT_DIR).parts
         author, name, version = parts[0], parts[1], parts[2]
-        catalog.append({"author": author, "name": name, "version": version,
+        catalog.append({"author": author, "name": name, "version": int(version),
                         "url": "/".join(parts)})
 
     (OUT_DIR / "catalog.json").write_text(json.dumps(catalog, indent=2))
