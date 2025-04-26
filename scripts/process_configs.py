@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 import json, pathlib, re, shutil, sys
-from jsonschema import Draft202012Validator  # pip install jsonschema
-SCHEMA_PATH = pathlib.Path("config.schema.json")
+from jsonschema import Draft202012Validator 
+from pathlib import Path
+ROOT = Path(__file__).resolve().parent.parent   # repo root
+SCHEMA_PATH = ROOT / "config.schema.json"
 RAW_DIR     = pathlib.Path("configs")
 OUT_DIR     = pathlib.Path("site")           # artifact root for Pages
 
