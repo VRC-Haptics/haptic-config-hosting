@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/config.schema.json",
+  "type": "object",
+  "required": ["nodes", "meta"],
+  "additionalProperties": false,
+
+  "properties": {
+    "nodes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["node_data", "address", "is_external_address",
+                     "radius", "target_bone"],
+        "additionalProperties": false,
+        "properties": {
+          "node_data": {
+            "type": "object",
+            "required": ["x", "y", "z", "groups"],
+            "additionalProperties": false,
+            "properties": {
+              "x":  { "type": "number"},
+              "y":  { "type": "number"},
+              "z":  { "type": "number" },
+              "groups": {
+                "type": "array",
+                "minItems": 1,
+                "items": { "type": "string", "minLength": 1 }
+              }
+            }
+          },
+          "address": {
+            "type": "string",
+            "pattern": "^/avatar/parameters/[\\x00-\\x7F]+$"
+          },
+          "is_external_address": { "type": "boolean" },
+          "radius": { "type": "number", "exclusiveMinimum": 0 },
+          "target_bone": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[\\x00-\\x7F]+$"
+          }
+        }
+      }
+    },
+
+    "meta": {
+      "type": "object",
+      "required": ["map_name", "map_author", "map_version"],
+      "additionalProperties": false,
+      "properties": {
+        "map_name":   { "type": "string", "minLength": 1, "pattern": "^[\\x00-\\x7F]+$" },
+        "map_author": { "type": "string", "minLength": 1, "pattern": "^[\\x00-\\x7F]+$" },
+        "map_version": { "type": "integer", "minimum": 1 }
+      }
+    }
+  }
+}

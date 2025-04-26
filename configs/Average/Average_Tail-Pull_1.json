@@ -1,0 +1,23 @@
+{
+    "nodes": [
+        {
+            "node_data": {
+                "x": 0.0,
+                "y": 0.9628999829292297,
+                "z": -0.08659999817609787,
+                "groups": [
+                    "TorsoBack"
+                ]
+            },
+            "address": "/avatar/parameters/tail_Stretch",
+            "is_external_address": true,
+            "radius": 0.03750000149011612,
+            "target_bone": "Hips"
+        }
+    ],
+    "meta": {
+        "map_name": "Tail-Pull",
+        "map_author": "Average",
+        "map_version": 1
+    }
+}

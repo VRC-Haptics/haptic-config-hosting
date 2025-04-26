@@ -1,0 +1,49 @@
+name: Validate & publish maps
+on:
+  push:
+    paths:
+      - "configs/**/*.json"      # run only when raw data changes
+  workflow_dispatch:             # allow manual reruns
+
+permissions:
+  contents: write                # allow auto-commit
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Install dependencies
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+
+      - name: Install jsonschema
+        run: pip install jsonschema==4.*
+
+      # Validate + transform
+      - name: Process configs
+        run: python scripts/process_configs.py
+
+      # Commit the generated /site folder back to the repo (optional)
+      - name: Commit processed files
+        uses: stefanzweifel/git-auto-commit-action@v5        # auto-commit [turn0search5]﻿
+        with:
+          commit_message: "chore: automated map build"
+
+      # Package for Pages
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3               # wraps upload-artifact [turn1search0]﻿[turn1search3]﻿
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4                        # official deploy [turn1search4]﻿
