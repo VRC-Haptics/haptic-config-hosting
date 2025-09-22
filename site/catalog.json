@@ -1,24 +1,6 @@
 [
   {
     "author": "Average",
-    "name": "Tail-Pull",
-    "version": 1,
-    "url": "Average/Tail-Pull/1/index.json"
-  },
-  {
-    "author": "Average",
-    "name": "Ear_Pull",
-    "version": 1,
-    "url": "Average/Ear_Pull/1/index.json"
-  },
-  {
-    "author": "Average",
-    "name": "Headset-8x",
-    "version": 1,
-    "url": "Average/Headset-8x/1/index.json"
-  },
-  {
-    "author": "Average",
     "name": "FrontVest-v3beta",
     "version": 1,
     "url": "Average/FrontVest-v3beta/1/index.json"
@@ -28,6 +10,24 @@
     "name": "BackVest-v3beta",
     "version": 1,
     "url": "Average/BackVest-v3beta/1/index.json"
+  },
+  {
+    "author": "Average",
+    "name": "Headset-8x",
+    "version": 1,
+    "url": "Average/Headset-8x/1/index.json"
+  },
+  {
+    "author": "Average",
+    "name": "Tail-Pull",
+    "version": 1,
+    "url": "Average/Tail-Pull/1/index.json"
+  },
+  {
+    "author": "Average",
+    "name": "Ear_Pull",
+    "version": 1,
+    "url": "Average/Ear_Pull/1/index.json"
   },
   {
     "author": "Average",
