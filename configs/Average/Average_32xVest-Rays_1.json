@@ -1,0 +1,905 @@
+{
+    "nodes": [
+        {
+            "node_data": {
+                "x": 0.0740608274936676,
+                "y": 1.1464160680770875,
+                "z": -0.10069286823272705,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoBack"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/c5PI9RlQWy",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Spine",
+            "ray": {
+                "rotation_offset": {
+                    "x": 10.965141296386719,
+                    "y": 173.12557983398438,
+                    "z": -5.435317973478959e-8
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": -0.0740608274936676,
+                "y": 1.1464160680770875,
+                "z": -0.10069286823272705,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoBack"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/c5PI9RlQWy_mirror",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Spine",
+            "ray": {
+                "rotation_offset": {
+                    "x": 10.965141296386719,
+                    "y": -173.12557983398438,
+                    "z": 5.435317973478959e-8
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": 0.046796876937150958,
+                "y": 1.267038345336914,
+                "z": 0.11327467858791352,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoFront"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/Ji5wK1WxDP",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Chest",
+            "ray": {
+                "rotation_offset": {
+                    "x": 350.3919982910156,
+                    "y": 354.89837646484377,
+                    "z": 1.0824001606124512e-7
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": -0.046796876937150958,
+                "y": 1.267038345336914,
+                "z": 0.11327467858791352,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoFront"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/Ji5wK1WxDP_mirror",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Chest",
+            "ray": {
+                "rotation_offset": {
+                    "x": 350.3919982910156,
+                    "y": -354.89837646484377,
+                    "z": -1.0824001606124512e-7
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": 0.14086343348026277,
+                "y": 1.1469212770462037,
+                "z": -0.07594633102416992,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoBack"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/mq6kGZTUSU",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Spine",
+            "ray": {
+                "rotation_offset": {
+                    "x": 19.763439178466798,
+                    "y": 131.83651733398438,
+                    "z": 0.0
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": -0.14086343348026277,
+                "y": 1.1469212770462037,
+                "z": -0.07594633102416992,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoBack"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/mq6kGZTUSU_mirror",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Spine",
+            "ray": {
+                "rotation_offset": {
+                    "x": 19.763439178466798,
+                    "y": -131.83651733398438,
+                    "z": 0.0
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": 0.052876509726047519,
+                "y": 1.0583938360214234,
+                "z": -0.08177626132965088,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoBack"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/wyRIFAXG1R",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Spine",
+            "ray": {
+                "rotation_offset": {
+                    "x": 9.052617073059082,
+                    "y": 177.4894561767578,
+                    "z": -2.7016941572810539e-8
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": -0.052876509726047519,
+                "y": 1.0583938360214234,
+                "z": -0.08177626132965088,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoBack"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/wyRIFAXG1R_mirror",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Spine",
+            "ray": {
+                "rotation_offset": {
+                    "x": 9.052617073059082,
+                    "y": -177.4894561767578,
+                    "z": 2.7016941572810539e-8
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": 0.11821969598531723,
+                "y": 0.9621910452842712,
+                "z": 0.061838313937187198,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoFront"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/MvSwzh9B5C",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Hips",
+            "ray": {
+                "rotation_offset": {
+                    "x": 5.771113872528076,
+                    "y": 44.2396240234375,
+                    "z": -2.145307576029154e-7
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": -0.11821969598531723,
+                "y": 0.9621910452842712,
+                "z": 0.061838313937187198,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoFront"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/MvSwzh9B5C_mirror",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Hips",
+            "ray": {
+                "rotation_offset": {
+                    "x": 5.771113872528076,
+                    "y": -44.2396240234375,
+                    "z": 2.145307576029154e-7
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": 0.04587541148066521,
+                "y": 1.1500065326690674,
+                "z": 0.11386171728372574,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoFront"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/4BGHOpVzVG",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Spine",
+            "ray": {
+                "rotation_offset": {
+                    "x": 0.5131413340568543,
+                    "y": 17.4776611328125,
+                    "z": 2.1345196898892028e-7
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": -0.04587541148066521,
+                "y": 1.1500065326690674,
+                "z": 0.11386171728372574,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoFront"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/4BGHOpVzVG_mirror",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Spine",
+            "ray": {
+                "rotation_offset": {
+                    "x": 0.5131413340568543,
+                    "y": -17.4776611328125,
+                    "z": -2.1345196898892028e-7
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": 0.12733344733715058,
+                "y": 1.047400951385498,
+                "z": 0.05993665009737015,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoFront"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/9LgCOQeYFl",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Spine",
+            "ray": {
+                "rotation_offset": {
+                    "x": 0.039010629057884219,
+                    "y": 45.094154357910159,
+                    "z": 0.0
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": -0.12733344733715058,
+                "y": 1.047400951385498,
+                "z": 0.05993665009737015,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoFront"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/9LgCOQeYFl_mirror",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Spine",
+            "ray": {
+                "rotation_offset": {
+                    "x": 0.039010629057884219,
+                    "y": -45.094154357910159,
+                    "z": 0.0
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": 0.04802164435386658,
+                "y": 0.964641809463501,
+                "z": 0.10457947850227356,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoFront"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/BqXjcEQ8ZK",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Hips",
+            "ray": {
+                "rotation_offset": {
+                    "x": 357.41265869140627,
+                    "y": 17.54461669921875,
+                    "z": 3.4719951713668709e-7
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": -0.04802164435386658,
+                "y": 0.964641809463501,
+                "z": 0.10457947850227356,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoFront"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/BqXjcEQ8ZK_mirror",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Hips",
+            "ray": {
+                "rotation_offset": {
+                    "x": 357.41265869140627,
+                    "y": -17.54461669921875,
+                    "z": -3.4719951713668709e-7
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": 0.04349462315440178,
+                "y": 1.0579652786254883,
+                "z": 0.11604547500610352,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoFront"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/WRgmTOVZdZ",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Spine",
+            "ray": {
+                "rotation_offset": {
+                    "x": 357.8687438964844,
+                    "y": 9.768656730651856,
+                    "z": 4.004833797921492e-8
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": -0.04349462315440178,
+                "y": 1.0579652786254883,
+                "z": 0.11604547500610352,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoFront"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/WRgmTOVZdZ_mirror",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Spine",
+            "ray": {
+                "rotation_offset": {
+                    "x": 357.8687438964844,
+                    "y": -9.768656730651856,
+                    "z": -4.004833797921492e-8
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": 0.14452378451824189,
+                "y": 0.9632264375686646,
+                "z": -0.03305613622069359,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoBack"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/gf7ovyVXnQ",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Hips",
+            "ray": {
+                "rotation_offset": {
+                    "x": 359.3309020996094,
+                    "y": 116.50128173828125,
+                    "z": 0.0
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": -0.14452378451824189,
+                "y": 0.9632264375686646,
+                "z": -0.03305613622069359,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoBack"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/gf7ovyVXnQ_mirror",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Hips",
+            "ray": {
+                "rotation_offset": {
+                    "x": 359.3309020996094,
+                    "y": -116.50128173828125,
+                    "z": 0.0
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": 0.13473691046237946,
+                "y": 1.1488229036331177,
+                "z": 0.059179648756980899,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoFront"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/vbcIxYxo9u",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Spine",
+            "ray": {
+                "rotation_offset": {
+                    "x": 7.773224830627441,
+                    "y": 61.51792907714844,
+                    "z": 0.0000012925374903716148
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": -0.13473691046237946,
+                "y": 1.1488229036331177,
+                "z": 0.059179648756980899,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoFront"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/vbcIxYxo9u_mirror",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Spine",
+            "ray": {
+                "rotation_offset": {
+                    "x": 7.773224830627441,
+                    "y": -61.51792907714844,
+                    "z": -0.0000012925374903716148
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": 0.07251832634210587,
+                "y": 1.2684073448181153,
+                "z": -0.12345936894416809,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoBack"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/lpip4PZndI",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Chest",
+            "ray": {
+                "rotation_offset": {
+                    "x": 2.9736969470977785,
+                    "y": 187.42337036132813,
+                    "z": 2.671639798279557e-8
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": -0.07251832634210587,
+                "y": 1.2684073448181153,
+                "z": -0.12345936894416809,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoBack"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/lpip4PZndI_mirror",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Chest",
+            "ray": {
+                "rotation_offset": {
+                    "x": 2.9736969470977785,
+                    "y": -187.42337036132813,
+                    "z": -2.671639798279557e-8
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": 0.13477183878421784,
+                "y": 1.0473865270614625,
+                "z": -0.04449024796485901,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoBack"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/pIsM3AgoFX",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Spine",
+            "ray": {
+                "rotation_offset": {
+                    "x": 0.6498108506202698,
+                    "y": 125.3835220336914,
+                    "z": 0.0
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": -0.13477183878421784,
+                "y": 1.0473865270614625,
+                "z": -0.04449024796485901,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoBack"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/pIsM3AgoFX_mirror",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Spine",
+            "ray": {
+                "rotation_offset": {
+                    "x": 0.6498108506202698,
+                    "y": -125.3835220336914,
+                    "z": 0.0
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": 0.17048858106136323,
+                "y": 1.2713773250579835,
+                "z": -0.11028319597244263,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoBack"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/9ufNnCDJB1",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Chest",
+            "ray": {
+                "rotation_offset": {
+                    "x": 8.201672554016114,
+                    "y": 153.5347137451172,
+                    "z": 0.0
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": -0.17048858106136323,
+                "y": 1.2713773250579835,
+                "z": -0.11028319597244263,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoBack"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/9ufNnCDJB1_mirror",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Chest",
+            "ray": {
+                "rotation_offset": {
+                    "x": 8.201672554016114,
+                    "y": -153.5347137451172,
+                    "z": 0.0
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": 0.14525577425956727,
+                "y": 1.2694917917251588,
+                "z": 0.09062188863754273,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoFront"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/R0FNEnvp6B",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Chest",
+            "ray": {
+                "rotation_offset": {
+                    "x": 345.6470031738281,
+                    "y": 31.91539764404297,
+                    "z": -4.4064057647119628e-7
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": -0.14525577425956727,
+                "y": 1.2694917917251588,
+                "z": 0.09062188863754273,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoFront"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/R0FNEnvp6B_mirror",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Chest",
+            "ray": {
+                "rotation_offset": {
+                    "x": 345.6470031738281,
+                    "y": -31.91539764404297,
+                    "z": 4.4064057647119628e-7
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": 0.07267555594444275,
+                "y": 0.9691722989082336,
+                "z": -0.08192655444145203,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoBack"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/34bS9XrsB4",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Hips",
+            "ray": {
+                "rotation_offset": {
+                    "x": 1.0829157829284669,
+                    "y": 170.6037139892578,
+                    "z": -6.671297736460247e-9
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        },
+        {
+            "node_data": {
+                "x": -0.07267555594444275,
+                "y": 0.9691722989082336,
+                "z": -0.08192655444145203,
+                "groups": [
+                    "TorsoRight",
+                    "TorsoBack"
+                ]
+            },
+            "address": "/avatar/parameters/Haptics/Nodes/34bS9XrsB4_mirror",
+            "is_external_address": false,
+            "radius": 0.04500000178813934,
+            "target_bone": "Hips",
+            "ray": {
+                "rotation_offset": {
+                    "x": 1.0829157829284669,
+                    "y": -170.6037139892578,
+                    "z": 6.671297736460247e-9
+                },
+                "position_offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.019999999552965165
+                },
+                "size": 0.07500000298023224
+            }
+        }
+    ],
+    "meta": {
+        "map_name": "32xVest-Rays",
+        "map_author": "Average",
+        "map_version": 1
+    }
+}
