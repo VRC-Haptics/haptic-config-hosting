@@ -1,37 +1,89 @@
 {
+  "$schema": "https://vrc-haptics.github.io/mapping-schema/schema/v0.0.1/map.schema.json",
+  "schemaVersion": "v0.0.1",
+  "identification": {
+    "authorName": "Average",
+    "mapName": "Ear_Pull",
+    "mapVersion": 1
+  },
   "nodes": [
     {
-      "node_data": {
-        "x": -0.07270000129938126,
-        "y": 1.6500999927520752,
-        "z": 0.02250000089406967,
-        "groups": [
-          "Head"
-        ]
-      },
-      "address": "/avatar/parameters/Haptics/earLeft_Stretch",
-      "is_external_address": true,
+      "location": [
+        -0.07270000129938126,
+        1.6500999927520752,
+        0.02250000089406967
+      ],
+      "interactionTags": [
+        "Head"
+      ],
+      "parentBone": "head",
+      "interpolationLayer": "default",
       "radius": 0.05000000074505806,
-      "target_bone": "Head"
+      "inputs": [
+        {
+          "address": "/avatar/parameters/Haptics/earLeft_Stretch",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": true,
+          "source": "weight",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.05000000074505806
+          }
+        },
+        {
+          "address": "/avatar/parameters/Haptics/earLeft_Stretch",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": true,
+          "source": "velocity",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.05000000074505806
+          }
+        }
+      ]
     },
     {
-      "node_data": {
-        "x": 0.07270000129938126,
-        "y": 1.6500999927520752,
-        "z": 0.02250000089406967,
-        "groups": [
-          "Head"
-        ]
-      },
-      "address": "/avatar/parameters/Haptics/earRight_Stretch",
-      "is_external_address": true,
+      "location": [
+        0.07270000129938126,
+        1.6500999927520752,
+        0.02250000089406967
+      ],
+      "interactionTags": [
+        "Head"
+      ],
+      "parentBone": "head",
+      "interpolationLayer": "default",
       "radius": 0.05000000074505806,
-      "target_bone": "Head"
+      "inputs": [
+        {
+          "address": "/avatar/parameters/Haptics/earRight_Stretch",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": true,
+          "source": "weight",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.05000000074505806
+          }
+        },
+        {
+          "address": "/avatar/parameters/Haptics/earRight_Stretch",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": true,
+          "source": "velocity",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.05000000074505806
+          }
+        }
+      ]
     }
-  ],
-  "meta": {
-    "map_name": "Ear_Pull",
-    "map_author": "Average",
-    "map_version": 1
-  }
+  ]
 }
