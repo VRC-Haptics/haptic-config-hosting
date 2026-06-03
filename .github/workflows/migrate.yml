@@ -34,7 +34,7 @@ jobs:
 
       - name: Run migrations
         id: migrate
-        run: node .github/scripts/migrate-configs.mjs
+        run: node .github/workflows/migrate-configs.mjs
 
       - name: Open pull request
         if: steps.migrate.outputs.changed == 'true'
