@@ -22,7 +22,7 @@
       "inputs": [
         {
           "address": "/avatar/parameters/Haptics/earLeft_Stretch",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "vrcPrefix": "",
           "externalSource": true,
           "source": "weight",
           "layer": "additive",
@@ -34,7 +34,7 @@
         },
         {
           "address": "/avatar/parameters/Haptics/earLeft_Stretch",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "vrcPrefix": "",
           "externalSource": true,
           "source": "velocity",
           "layer": "additive",
@@ -61,7 +61,7 @@
       "inputs": [
         {
           "address": "/avatar/parameters/Haptics/earRight_Stretch",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "vrcPrefix": "",
           "externalSource": true,
           "source": "weight",
           "layer": "additive",
@@ -73,7 +73,7 @@
         },
         {
           "address": "/avatar/parameters/Haptics/earRight_Stretch",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "vrcPrefix": "",
           "externalSource": true,
           "source": "velocity",
           "layer": "additive",

@@ -22,7 +22,7 @@
       "inputs": [
         {
           "address": "/avatar/parameters/tail_Stretch",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "vrcPrefix": "",
           "externalSource": true,
           "source": "weight",
           "layer": "additive",
@@ -34,7 +34,7 @@
         },
         {
           "address": "/avatar/parameters/tail_Stretch",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "vrcPrefix": "",
           "externalSource": true,
           "source": "velocity",
           "layer": "additive",
