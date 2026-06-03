@@ -1,0 +1,61 @@
+name: Migrate config files
+
+on:
+  workflow_dispatch:
+    inputs:
+      config_dir:
+        description: "Directory to walk for config JSON files"
+        required: false
+        default: "configs"
+      schema_base_url:
+        description: "Base URL of the published mapping-schema (no trailing slash)"
+        required: false
+        default: "https://vrc-haptics.github.io/mapping-schema"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    env:
+      CONFIG_DIR: ${{ github.event.inputs.config_dir || 'configs' }}
+      SCHEMA_BASE_URL: ${{ github.event.inputs.schema_base_url || 'https://vrc-haptics.github.io/mapping-schema' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install validator deps
+        run: npm install --no-save ajv ajv-formats
+
+      - name: Run migrations
+        id: migrate
+        run: node .github/scripts/migrate-configs.mjs
+
+      - name: Open pull request
+        if: steps.migrate.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          add-paths: ${{ env.CONFIG_DIR }}/**
+          branch: chore/migrate-config-schema
+          delete-branch: true
+          commit-message: "chore: migrate config files to latest schema version"
+          title: "Migrate config files to latest schema version"
+          body: |
+            Automated migration of config files under `${{ env.CONFIG_DIR }}` to the
+            latest schema version published at `${{ env.SCHEMA_BASE_URL }}`.
+
+            See the job summary for the per-file status table
+            (changed / unchanged / skipped / failed).
+            - **skipped** files require user input and were left untouched.
+            - **failed** files did not migrate cleanly; the run is marked failed below.
+
+      - name: Fail if any file failed to migrate
+        if: steps.migrate.outputs.failures != '0'
+        run: |
+          echo "::error::${{ steps.migrate.outputs.failures }} file(s) failed to migrate. See the job summary."
+          exit 1
