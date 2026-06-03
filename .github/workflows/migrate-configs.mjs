@@ -3,11 +3,10 @@
 // remote migration scripts, validates before and after each step, and writes
 // changed files in place. Designed to run inside a GitHub Actions job.
 
-import { readFile, writeFile, mkdtemp, rm } from "node:fs/promises";
+import { readFile, writeFile, mkdtemp, rm, readdir } from "node:fs/promises";
 import { tmpdir } from "node:os";
-import { join, sep } from "node:path";
+import { join } from "node:path";
 import { pathToFileURL } from "node:url";
-import { glob } from "node:fs/promises";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 
@@ -266,6 +265,24 @@ async function processFile(file, versions) {
   return { file, status: "changed", reason: `now ${latest}`, notes };
 }
 
+// Recursively collect all file paths under `dir` (Node 18+ compatible).
+async function walk(dir) {
+  const out = [];
+  let entries;
+  try {
+    entries = await readdir(dir, { withFileTypes: true });
+  } catch (e) {
+    if (e.code === "ENOENT") return out;
+    throw e;
+  }
+  for (const entry of entries) {
+    const full = join(dir, entry.name);
+    if (entry.isDirectory()) out.push(...(await walk(full)));
+    else if (entry.isFile()) out.push(full);
+  }
+  return out;
+}
+
 // ---- main -----------------------------------------------------------------
 
 async function main() {
@@ -276,9 +293,7 @@ async function main() {
   versions.deprecatedVersions = versions.deprecatedVersions || [];
   console.log(`Latest version: ${versions.schemaVersions[versions.schemaVersions.length - 1]}`);
 
-  const files = [];
-  for await (const f of glob(`${CONFIG_DIR}/**/*.json`)) files.push(f);
-  files.sort();
+  const files = (await walk(CONFIG_DIR)).filter((f) => f.endsWith(".json")).sort();
   console.log(`Found ${files.length} config file(s) under ${CONFIG_DIR}\n`);
 
   const results = [];
