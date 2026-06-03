@@ -21,8 +21,8 @@ jobs:
         uses: actions/setup-python@v5
         with: { python-version: "3.12" }
 
-      - name: Install jsonschema
-        run: pip install jsonschema==4.*
+      - name: Install python deps
+        run: pip install "jsonschema>=4.18,<5" "referencing>=0.30"
 
       # Validate + transform
       - name: Process configs
@@ -31,13 +31,13 @@ jobs:
 
       # Commit the generated /site folder back to the repo (optional)
       - name: Commit processed files
-        uses: stefanzweifel/git-auto-commit-action@v5        # auto-commit [turn0search5]﻿
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: automated map build"
 
       # Package for Pages
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3               # wraps upload-artifact [turn1search0]﻿[turn1search3]﻿
+        uses: actions/upload-pages-artifact@v3
         with:
           path: site
 
@@ -47,4 +47,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4                        # official deploy [turn1search4]﻿
+        uses: actions/deploy-pages@v4
