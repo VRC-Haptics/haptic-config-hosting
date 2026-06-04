@@ -18,7 +18,7 @@
       ],
       "parentBone": "hips",
       "interpolationLayer": "default",
-      "radius": 0.03750000149011612,
+      "radius": 0.10750000149011613,
       "inputs": [
         {
           "address": "/avatar/parameters/tail_Stretch",
@@ -29,7 +29,7 @@
           "weight": 1,
           "shape": {
             "type": "sphere",
-            "radius": 0.03750000149011612
+            "radius": 0.10750000149011613
           }
         },
         {
@@ -41,7 +41,7 @@
           "weight": 1,
           "shape": {
             "type": "sphere",
-            "radius": 0.03750000149011612
+            "radius": 0.10750000149011613
           }
         }
       ]
