@@ -1,0 +1,479 @@
+{
+  "$schema": "https://vrc-haptics.github.io/mapping-schema/schema/v0.0.1/map.schema.json",
+  "schemaVersion": "v0.0.1",
+  "identification": {
+    "authorName": "Average",
+    "mapName": "nardo-generic-face",
+    "mapVersion": 1
+  },
+  "nodes": [
+    {
+      "location": [
+        0,
+        1.54830002784729,
+        0.14329999685287476
+      ],
+      "interactionTags": [
+        "Head"
+      ],
+      "parentBone": "head",
+      "interpolationLayer": "default",
+      "radius": 0.1599999964237213,
+      "inputs": [
+        {
+          "address": "KYBu3jmg2I",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "weight",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.1599999964237213
+          }
+        },
+        {
+          "address": "KYBu3jmg2I",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "velocity",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.1599999964237213
+          }
+        }
+      ]
+    },
+    {
+      "location": [
+        0,
+        1.6806999444961548,
+        0.07649999856948853
+      ],
+      "interactionTags": [
+        "Head"
+      ],
+      "parentBone": "head",
+      "interpolationLayer": "default",
+      "radius": 0.1599999964237213,
+      "inputs": [
+        {
+          "address": "hauZQbtyi5",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "weight",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.1599999964237213
+          }
+        },
+        {
+          "address": "hauZQbtyi5",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "velocity",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.1599999964237213
+          }
+        }
+      ]
+    },
+    {
+      "location": [
+        0.02019999921321869,
+        1.5571000576019287,
+        0.11190000176429749
+      ],
+      "interactionTags": [
+        "Head"
+      ],
+      "parentBone": "head",
+      "interpolationLayer": "default",
+      "radius": 0.10000000149011612,
+      "inputs": [
+        {
+          "address": "bcBuxLkwLY",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "weight",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.10000000149011612
+          }
+        },
+        {
+          "address": "bcBuxLkwLY",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "velocity",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.10000000149011612
+          }
+        }
+      ]
+    },
+    {
+      "location": [
+        0.019200000911951065,
+        1.5997999906539917,
+        0.11490000039339066
+      ],
+      "interactionTags": [
+        "Head"
+      ],
+      "parentBone": "head",
+      "interpolationLayer": "default",
+      "radius": 0.10000000149011612,
+      "inputs": [
+        {
+          "address": "NESpSyyvXE",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "weight",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.10000000149011612
+          }
+        },
+        {
+          "address": "NESpSyyvXE",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "velocity",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.10000000149011612
+          }
+        }
+      ]
+    },
+    {
+      "location": [
+        0.06199999898672104,
+        1.5808000564575195,
+        0.0860000029206276
+      ],
+      "interactionTags": [
+        "Head"
+      ],
+      "parentBone": "head",
+      "interpolationLayer": "default",
+      "radius": 0.10000000149011612,
+      "inputs": [
+        {
+          "address": "DaP9RI2cbS",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "weight",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.10000000149011612
+          }
+        },
+        {
+          "address": "DaP9RI2cbS",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "velocity",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.10000000149011612
+          }
+        }
+      ]
+    },
+    {
+      "location": [
+        0.06390000134706497,
+        1.5098999738693237,
+        0.061799999326467514
+      ],
+      "interactionTags": [
+        "Head"
+      ],
+      "parentBone": "head",
+      "interpolationLayer": "default",
+      "radius": 0.12999999523162842,
+      "inputs": [
+        {
+          "address": "u2UFEQYKUI",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "weight",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.12999999523162842
+          }
+        },
+        {
+          "address": "u2UFEQYKUI",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "velocity",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.12999999523162842
+          }
+        }
+      ]
+    },
+    {
+      "location": [
+        0.03449999913573265,
+        1.4782999753952026,
+        0.1096000000834465
+      ],
+      "interactionTags": [
+        "Head"
+      ],
+      "parentBone": "head",
+      "interpolationLayer": "default",
+      "radius": 0.1899999976158142,
+      "inputs": [
+        {
+          "address": "4L5MutQHB1",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "weight",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.1899999976158142
+          }
+        },
+        {
+          "address": "4L5MutQHB1",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "velocity",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.1899999976158142
+          }
+        }
+      ]
+    },
+    {
+      "location": [
+        -0.02019999921321869,
+        1.5571000576019287,
+        0.11190000176429749
+      ],
+      "interactionTags": [
+        "Head"
+      ],
+      "parentBone": "head",
+      "interpolationLayer": "default",
+      "radius": 0.10000000149011612,
+      "inputs": [
+        {
+          "address": "mDlBPmdu1e",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "weight",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.10000000149011612
+          }
+        },
+        {
+          "address": "mDlBPmdu1e",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "velocity",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.10000000149011612
+          }
+        }
+      ]
+    },
+    {
+      "location": [
+        -0.019200000911951065,
+        1.5997999906539917,
+        0.11490000039339066
+      ],
+      "interactionTags": [
+        "Head"
+      ],
+      "parentBone": "head",
+      "interpolationLayer": "default",
+      "radius": 0.10000000149011612,
+      "inputs": [
+        {
+          "address": "8BCOtKv4Ai",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "weight",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.10000000149011612
+          }
+        },
+        {
+          "address": "8BCOtKv4Ai",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "velocity",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.10000000149011612
+          }
+        }
+      ]
+    },
+    {
+      "location": [
+        -0.06199999898672104,
+        1.5808000564575195,
+        0.0860000029206276
+      ],
+      "interactionTags": [
+        "Head"
+      ],
+      "parentBone": "head",
+      "interpolationLayer": "default",
+      "radius": 0.10000000149011612,
+      "inputs": [
+        {
+          "address": "pndBPK9vdS",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "weight",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.10000000149011612
+          }
+        },
+        {
+          "address": "pndBPK9vdS",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "velocity",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.10000000149011612
+          }
+        }
+      ]
+    },
+    {
+      "location": [
+        -0.06390000134706497,
+        1.5098999738693237,
+        0.061799999326467514
+      ],
+      "interactionTags": [
+        "Head"
+      ],
+      "parentBone": "head",
+      "interpolationLayer": "default",
+      "radius": 0.12999999523162842,
+      "inputs": [
+        {
+          "address": "fZhnk7i9Hd",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "weight",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.12999999523162842
+          }
+        },
+        {
+          "address": "fZhnk7i9Hd",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "velocity",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.12999999523162842
+          }
+        }
+      ]
+    },
+    {
+      "location": [
+        -0.03449999913573265,
+        1.4782999753952026,
+        0.1096000000834465
+      ],
+      "interactionTags": [
+        "Head"
+      ],
+      "parentBone": "head",
+      "interpolationLayer": "default",
+      "radius": 0.1899999976158142,
+      "inputs": [
+        {
+          "address": "bfIzrvPKvQ",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "weight",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.1899999976158142
+          }
+        },
+        {
+          "address": "bfIzrvPKvQ",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "velocity",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.1899999976158142
+          }
+        }
+      ]
+    }
+  ]
+}
