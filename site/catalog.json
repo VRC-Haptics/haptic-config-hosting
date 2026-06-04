@@ -47,5 +47,12 @@
     "version": 1,
     "schemaVersion": "v0.0.1",
     "url": "Average/Tail-Pull/1/index.json"
+  },
+  {
+    "author": "Average",
+    "name": "nardo-generic-face",
+    "version": 1,
+    "schemaVersion": "v0.0.1",
+    "url": "Average/nardo-generic-face/1/index.json"
   }
 ]
