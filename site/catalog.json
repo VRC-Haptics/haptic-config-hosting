@@ -50,6 +50,13 @@
   },
   {
     "author": "Average",
+    "name": "Testing-Rays",
+    "version": 1,
+    "schemaVersion": "v0.0.1",
+    "url": "Average/Testing-Rays/1/index.json"
+  },
+  {
+    "author": "Average",
     "name": "nardo-generic-face",
     "version": 1,
     "schemaVersion": "v0.0.1",
