@@ -40,5 +40,26 @@
     "version": 1,
     "schemaVersion": "v0.0.1",
     "url": "Average/Headset-8x/1/index.json"
+  },
+  {
+    "author": "Average",
+    "name": "Tail-Pull",
+    "version": 1,
+    "schemaVersion": "v0.0.1",
+    "url": "Average/Tail-Pull/1/index.json"
+  },
+  {
+    "author": "Average",
+    "name": "nardo-generic-face",
+    "version": 1,
+    "schemaVersion": "v0.0.1",
+    "url": "Average/nardo-generic-face/1/index.json"
+  },
+  {
+    "author": "Average",
+    "name": "nardo-generic-vest",
+    "version": 1,
+    "schemaVersion": "v0.0.1",
+    "url": "Average/nardo-generic-vest/1/index.json"
   }
 ]
