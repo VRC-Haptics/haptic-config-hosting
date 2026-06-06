@@ -1,0 +1,175 @@
+{
+  "$schema": "https://vrc-haptics.github.io/mapping-schema/schema/v0.0.1/map.schema.json",
+  "schemaVersion": "v0.0.1",
+  "identification": {
+    "authorName": "Average",
+    "mapName": "Testing-Rays",
+    "mapVersion": 1
+  },
+  "nodes": [
+    {
+      "location": [
+        0.0740608274936676,
+        1.1464160680770874,
+        -0.10069286823272705
+      ],
+      "interactionTags": [
+        "TorsoRight",
+        "TorsoBack"
+      ],
+      "parentBone": "spine",
+      "interpolationLayer": "default",
+      "radius": 0.04500000178813934,
+      "inputs": [
+        {
+          "address": "c5PI9RlQWy",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "weight",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.04500000178813934
+          }
+        },
+        {
+          "address": "c5PI9RlQWy_Ratio",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "weight",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "ray",
+            "len": 0.07500000298023224,
+            "offset": -0.019999999552965164
+          }
+        }
+      ]
+    },
+    {
+      "location": [
+        -0.0740608274936676,
+        1.1464160680770874,
+        -0.10069286823272705
+      ],
+      "interactionTags": [
+        "TorsoRight",
+        "TorsoBack"
+      ],
+      "parentBone": "spine",
+      "interpolationLayer": "default",
+      "radius": 0.04500000178813934,
+      "inputs": [
+        {
+          "address": "c5PI9RlQWy_mirror",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "weight",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.04500000178813934
+          }
+        },
+        {
+          "address": "c5PI9RlQWy_mirror_Ratio",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "weight",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "ray",
+            "len": 0.07500000298023224,
+            "offset": -0.019999999552965164
+          }
+        }
+      ]
+    },
+    {
+      "location": [
+        0.046796876937150955,
+        1.267038345336914,
+        0.11327467858791351
+      ],
+      "interactionTags": [
+        "TorsoRight",
+        "TorsoFront"
+      ],
+      "parentBone": "chest",
+      "interpolationLayer": "default",
+      "radius": 0.04500000178813934,
+      "inputs": [
+        {
+          "address": "Ji5wK1WxDP",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "weight",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.04500000178813934
+          }
+        },
+        {
+          "address": "Ji5wK1WxDP_Ratio",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "weight",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "ray",
+            "len": 0.07500000298023224,
+            "offset": -0.019999999552965164
+          }
+        }
+      ]
+    },
+    {
+      "location": [
+        -0.046796876937150955,
+        1.267038345336914,
+        0.11327467858791351
+      ],
+      "interactionTags": [
+        "TorsoRight",
+        "TorsoFront"
+      ],
+      "parentBone": "chest",
+      "interpolationLayer": "default",
+      "radius": 0.04500000178813934,
+      "inputs": [
+        {
+          "address": "Ji5wK1WxDP_mirror",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "weight",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "sphere",
+            "radius": 0.04500000178813934
+          }
+        },
+        {
+          "address": "Ji5wK1WxDP_mirror_Ratio",
+          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "externalSource": false,
+          "source": "weight",
+          "layer": "additive",
+          "weight": 1,
+          "shape": {
+            "type": "ray",
+            "len": 0.07500000298023224,
+            "offset": -0.019999999552965164
+          }
+        }
+      ]
+    }
+  ]
+}
