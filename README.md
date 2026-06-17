@@ -2,6 +2,8 @@
 This repository archives the different hosted maps and provides the website for browsing/downloading them.
 [Official Website](https://vrhaptics.dedyn.io/): Browse and download published configs.
 
+The archive branch on this hosts's the regular archival zips. 
+
 archive.zip is updated semi-regularly and records different changes that happen on the serving host.
 
 `site/index.html` is the entry point for the website.
