@@ -21,8 +21,8 @@
       "radius": 0.1599999964237213,
       "inputs": [
         {
-          "address": "KYBu3jmg2I",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "address": "Haptics/Nodes/KYBu3jmg2I",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": false,
           "source": "weight",
           "layer": "additive",
@@ -33,8 +33,8 @@
           }
         },
         {
-          "address": "KYBu3jmg2I",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "address": "Haptics/Nodes/KYBu3jmg2I",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": false,
           "source": "velocity",
           "layer": "additive",
@@ -60,8 +60,8 @@
       "radius": 0.1599999964237213,
       "inputs": [
         {
-          "address": "hauZQbtyi5",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "address": "Haptics/Nodes/hauZQbtyi5",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": false,
           "source": "weight",
           "layer": "additive",
@@ -72,8 +72,8 @@
           }
         },
         {
-          "address": "hauZQbtyi5",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "address": "Haptics/Nodes/hauZQbtyi5",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": false,
           "source": "velocity",
           "layer": "additive",
@@ -99,8 +99,8 @@
       "radius": 0.10000000149011612,
       "inputs": [
         {
-          "address": "bcBuxLkwLY",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "address": "Haptics/Nodes/bcBuxLkwLY",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": false,
           "source": "weight",
           "layer": "additive",
@@ -111,8 +111,8 @@
           }
         },
         {
-          "address": "bcBuxLkwLY",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "address": "Haptics/Nodes/bcBuxLkwLY",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": false,
           "source": "velocity",
           "layer": "additive",
@@ -138,8 +138,8 @@
       "radius": 0.10000000149011612,
       "inputs": [
         {
-          "address": "NESpSyyvXE",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "address": "Haptics/Nodes/NESpSyyvXE",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": false,
           "source": "weight",
           "layer": "additive",
@@ -150,8 +150,8 @@
           }
         },
         {
-          "address": "NESpSyyvXE",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "address": "Haptics/Nodes/NESpSyyvXE",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": false,
           "source": "velocity",
           "layer": "additive",
@@ -177,8 +177,8 @@
       "radius": 0.10000000149011612,
       "inputs": [
         {
-          "address": "DaP9RI2cbS",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "address": "Haptics/Nodes/DaP9RI2cbS",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": false,
           "source": "weight",
           "layer": "additive",
@@ -189,8 +189,8 @@
           }
         },
         {
-          "address": "DaP9RI2cbS",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "address": "Haptics/Nodes/DaP9RI2cbS",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": false,
           "source": "velocity",
           "layer": "additive",
@@ -216,8 +216,8 @@
       "radius": 0.12999999523162842,
       "inputs": [
         {
-          "address": "u2UFEQYKUI",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "address": "Haptics/Nodes/u2UFEQYKUI",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": false,
           "source": "weight",
           "layer": "additive",
@@ -228,8 +228,8 @@
           }
         },
         {
-          "address": "u2UFEQYKUI",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "address": "Haptics/Nodes/u2UFEQYKUI",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": false,
           "source": "velocity",
           "layer": "additive",
@@ -255,8 +255,8 @@
       "radius": 0.1899999976158142,
       "inputs": [
         {
-          "address": "4L5MutQHB1",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "address": "Haptics/Nodes/4L5MutQHB1",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": false,
           "source": "weight",
           "layer": "additive",
@@ -267,8 +267,8 @@
           }
         },
         {
-          "address": "4L5MutQHB1",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "address": "Haptics/Nodes/4L5MutQHB1",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": false,
           "source": "velocity",
           "layer": "additive",
@@ -294,8 +294,8 @@
       "radius": 0.10000000149011612,
       "inputs": [
         {
-          "address": "mDlBPmdu1e",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "address": "Haptics/Nodes/mDlBPmdu1e",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": false,
           "source": "weight",
           "layer": "additive",
@@ -306,8 +306,8 @@
           }
         },
         {
-          "address": "mDlBPmdu1e",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "address": "Haptics/Nodes/mDlBPmdu1e",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": false,
           "source": "velocity",
           "layer": "additive",
@@ -333,8 +333,8 @@
       "radius": 0.10000000149011612,
       "inputs": [
         {
-          "address": "8BCOtKv4Ai",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "address": "Haptics/Nodes/8BCOtKv4Ai",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": false,
           "source": "weight",
           "layer": "additive",
@@ -345,8 +345,8 @@
           }
         },
         {
-          "address": "8BCOtKv4Ai",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "address": "Haptics/Nodes/8BCOtKv4Ai",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": false,
           "source": "velocity",
           "layer": "additive",
@@ -372,8 +372,8 @@
       "radius": 0.10000000149011612,
       "inputs": [
         {
-          "address": "pndBPK9vdS",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "address": "Haptics/Nodes/pndBPK9vdS",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": false,
           "source": "weight",
           "layer": "additive",
@@ -384,8 +384,8 @@
           }
         },
         {
-          "address": "pndBPK9vdS",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "address": "Haptics/Nodes/pndBPK9vdS",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": false,
           "source": "velocity",
           "layer": "additive",
@@ -411,8 +411,8 @@
       "radius": 0.12999999523162842,
       "inputs": [
         {
-          "address": "fZhnk7i9Hd",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "address": "Haptics/Nodes/fZhnk7i9Hd",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": false,
           "source": "weight",
           "layer": "additive",
@@ -423,8 +423,8 @@
           }
         },
         {
-          "address": "fZhnk7i9Hd",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "address": "Haptics/Nodes/fZhnk7i9Hd",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": false,
           "source": "velocity",
           "layer": "additive",
@@ -450,8 +450,8 @@
       "radius": 0.1899999976158142,
       "inputs": [
         {
-          "address": "bfIzrvPKvQ",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "address": "Haptics/Nodes/bfIzrvPKvQ",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": false,
           "source": "weight",
           "layer": "additive",
@@ -462,8 +462,8 @@
           }
         },
         {
-          "address": "bfIzrvPKvQ",
-          "vrcPrefix": "/avatar/parameters/Haptics/Nodes/",
+          "address": "Haptics/Nodes/bfIzrvPKvQ",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": false,
           "source": "velocity",
           "layer": "additive",

@@ -21,8 +21,8 @@
       "radius": 0.10750000149011613,
       "inputs": [
         {
-          "address": "/avatar/parameters/tail_Stretch",
-          "vrcPrefix": "",
+          "address": "tail_Stretch",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": true,
           "source": "weight",
           "layer": "additive",
@@ -33,8 +33,8 @@
           }
         },
         {
-          "address": "/avatar/parameters/tail_Stretch",
-          "vrcPrefix": "",
+          "address": "tail_Stretch",
+          "vrcPrefix": "/avatar/parameters/",
           "externalSource": true,
           "source": "velocity",
           "layer": "additive",

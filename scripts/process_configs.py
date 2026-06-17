@@ -13,6 +13,7 @@ from pathlib import Path
 
 from jsonschema import Draft202012Validator
 from referencing import Registry, Resource
+import zipfile
 
 BASE_URL = os.environ.get("SCHEMA_BASE_URL", "https://vrc-haptics.github.io/mapping-schema").rstrip("/")
 SCHEMA_BASE = f"{BASE_URL}/schema"
@@ -39,6 +40,8 @@ def fetch_json(url: str) -> dict:
 
 
 def _retrieve(uri: str) -> Resource:
+    if not uri.startswith(SCHEMA_BASE + "/"):
+        raise ValueError(f"refusing to fetch schema ref outside {SCHEMA_BASE}: {uri}")
     return Resource.from_contents(fetch_json(uri))
 
 
@@ -57,14 +60,11 @@ def validator_for(schema_url: str) -> Draft202012Validator:
 
 def schema_url_for(doc: dict, supported: list[str]) -> str:
     version = doc.get("schemaVersion")
-    ref = doc.get("$schema")
-    if isinstance(version, str):
-        if version not in supported:
-            raise ValueError(f'schemaVersion "{version}" is not a supported version {supported}')
-        return f"{SCHEMA_BASE}/{version}/map.schema.json"
-    if isinstance(ref, str) and ref.startswith(("http://", "https://")):
-        return ref
-    raise ValueError("map has no schemaVersion and no usable $schema URL")
+    if not isinstance(version, str):
+        raise ValueError("map has no schemaVersion")
+    if version not in supported:
+        raise ValueError(f'schemaVersion "{version}" is not a supported version {supported}')
+    return f"{SCHEMA_BASE}/{version}/map.schema.json"
 
 
 def integrity_errors(doc: dict) -> list[str]:
@@ -135,14 +135,17 @@ def main() -> int:
         author, name, version = ident["authorName"], ident["mapName"], int(ident["mapVersion"])
         dest = OUT_DIR / author / name / str(version)
         dest.mkdir(parents=True, exist_ok=True)
-        (dest / "index.json").write_text(json.dumps(doc, indent=2) + "\n", encoding="utf-8")
+        arcname = f"{author}/{name}/{version}/index.json.zip"
+        payload = json.dumps(doc, indent=2) + "\n"
+        with zipfile.ZipFile(OUT_DIR / arcname, "w", compression=zipfile.ZIP_LZMA) as zf:
+            zf.writestr("index.json", payload)
         catalog.append(
             {
                 "author": author,
                 "name": name,
                 "version": version,
                 "schemaVersion": doc.get("schemaVersion"),
-                "url": f"{author}/{name}/{version}/index.json",
+                "url": arcname,
             }
         )
 
