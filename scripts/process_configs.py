@@ -10,6 +10,7 @@ import shutil
 import sys
 import urllib.request
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from jsonschema import Draft202012Validator
 from referencing import Registry, Resource
@@ -40,7 +41,12 @@ def fetch_json(url: str) -> dict:
 
 
 def _retrieve(uri: str) -> Resource:
-    if not uri.startswith(SCHEMA_BASE + "/"):
+    base, ref = urlsplit(SCHEMA_BASE), urlsplit(uri)
+    same_origin = (
+        base.scheme.lower() == ref.scheme.lower()
+        and base.netloc.lower() == ref.netloc.lower()
+    )
+    if not (same_origin and ref.path.startswith(base.path + "/")):
         raise ValueError(f"refusing to fetch schema ref outside {SCHEMA_BASE}: {uri}")
     return Resource.from_contents(fetch_json(uri))
 

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haptic Config Catalog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;450;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0E1116; --surface:#171B22; --surface-2:#1C2129;
+    --border:#262C36; --border-bright:#323A47;
+    --text:#E6E9EF; --muted:#8A93A2; --faint:#5C6573;
+    --pulse:#FF3D7F; --signal:#5BC8FF;
+    --display:'Space Grotesk',sans-serif;
+    --body:'Inter',sans-serif;
+    --mono:'JetBrains Mono',monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg); color:var(--text); font-family:var(--body);
+    line-height:1.5; -webkit-font-smoothing:antialiased;
+    min-height:100vh;
+  }
+  .wrap{max-width:920px; margin:0 auto; padding:0 24px}
+
+  /* Header */
+  header{padding:56px 0 32px; border-bottom:1px solid var(--border)}
+  .eyebrow{
+    font-family:var(--mono); font-size:12px; letter-spacing:.18em;
+    text-transform:uppercase; color:var(--pulse); margin-bottom:14px;
+    display:flex; align-items:center; gap:10px;
+  }
+  .pulse-dot{
+    width:8px; height:8px; border-radius:50%; background:var(--pulse);
+    box-shadow:0 0 0 0 var(--pulse); animation:pulse 2s infinite;
+  }
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(255,61,127,.5)}
+    70%{box-shadow:0 0 0 9px rgba(255,61,127,0)}
+    100%{box-shadow:0 0 0 0 rgba(255,61,127,0)}
+  }
+  h1{
+    font-family:var(--display); font-weight:700; font-size:clamp(34px,6vw,52px);
+    letter-spacing:-.02em; line-height:1.02; margin-bottom:14px;
+  }
+  .sub{color:var(--muted); font-size:16px; max-width:54ch}
+  .sub code{font-family:var(--mono); font-size:13px; color:var(--signal); background:var(--surface); padding:2px 6px; border-radius:4px}
+
+  /* Controls */
+  .controls{
+    display:flex; align-items:center; gap:16px; flex-wrap:wrap;
+    padding:24px 0; position:sticky; top:0; background:var(--bg);
+    z-index:5; border-bottom:1px solid var(--border);
+  }
+  .search{position:relative; flex:1; min-width:220px}
+  .search input{
+    width:100%; background:var(--surface); border:1px solid var(--border);
+    color:var(--text); font-family:var(--body); font-size:15px;
+    padding:12px 14px 12px 40px; border-radius:10px; outline:none;
+    transition:border-color .15s, box-shadow .15s;
+  }
+  .search input::placeholder{color:var(--faint)}
+  .search input:focus{border-color:var(--pulse); box-shadow:0 0 0 3px rgba(255,61,127,.12)}
+  .search svg{position:absolute; left:13px; top:50%; transform:translateY(-50%); width:16px; height:16px; stroke:var(--faint)}
+  .count{font-family:var(--mono); font-size:13px; color:var(--muted); white-space:nowrap}
+  .count b{color:var(--text); font-weight:500}
+
+  /* Author group */
+  .group{margin-top:36px}
+  .group-head{
+    display:flex; align-items:baseline; gap:12px; margin-bottom:14px;
+    padding-bottom:10px; border-bottom:1px solid var(--border);
+  }
+  .group-head h2{font-family:var(--display); font-weight:600; font-size:20px; letter-spacing:-.01em}
+  .group-head span{font-family:var(--mono); font-size:12px; color:var(--faint)}
+
+  /* Rows */
+  .row{
+    display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:16px;
+    background:var(--surface); border:1px solid var(--border);
+    border-radius:12px; padding:16px 18px; margin-bottom:10px;
+    transition:border-color .15s, transform .12s, background .15s;
+  }
+  .row:hover{border-color:var(--border-bright); background:var(--surface-2)}
+  .indicator{width:7px; height:7px; border-radius:50%; background:var(--signal); flex:none; opacity:.7}
+  .info{min-width:0}
+  .name{font-family:var(--display); font-weight:600; font-size:17px; letter-spacing:-.01em}
+  .meta{font-family:var(--mono); font-size:12px; color:var(--muted); margin-top:4px; display:flex; gap:14px; flex-wrap:wrap}
+  .meta .ver{color:var(--signal)}
+  .actions{display:flex; gap:8px; flex:none}
+  button.act, a.act{
+    font-family:var(--body); font-size:13px; font-weight:500; cursor:pointer;
+    border:1px solid var(--border-bright); background:transparent; color:var(--text);
+    padding:8px 13px; border-radius:8px; text-decoration:none; white-space:nowrap;
+    display:inline-flex; align-items:center; gap:6px;
+    transition:background .14s, border-color .14s, color .14s;
+  }
+  button.act:hover, a.act:hover{background:var(--surface-2); border-color:var(--muted)}
+  a.dl{border-color:transparent; background:var(--pulse); color:#fff}
+  a.dl:hover{background:#ff5a92; border-color:transparent}
+  button.act:focus-visible, a.act:focus-visible, .search input:focus-visible{outline:2px solid var(--signal); outline-offset:2px}
+  button.act.copied{color:var(--signal); border-color:var(--signal)}
+
+  /* States */
+  .state{padding:80px 24px; text-align:center; color:var(--muted)}
+  .state h3{font-family:var(--display); color:var(--text); font-size:20px; margin-bottom:8px}
+  .state code{font-family:var(--mono); font-size:13px; color:var(--signal)}
+  .spinner{width:28px; height:28px; border:3px solid var(--border); border-top-color:var(--pulse); border-radius:50%; animation:spin .8s linear infinite; margin:0 auto 18px}
+  @keyframes spin{to{transform:rotate(360deg)}}
+
+  footer{padding:48px 0 64px; color:var(--faint); font-family:var(--mono); font-size:12px; text-align:center; border-top:1px solid var(--border); margin-top:48px}
+  footer code{color:var(--muted)}
+
+  @media (max-width:560px){
+    .row{grid-template-columns:auto 1fr; row-gap:14px}
+    .actions{grid-column:1 / -1; justify-content:flex-start}
+    header{padding:40px 0 24px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none !important; transition:none !important; scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow"><span class="pulse-dot"></span>Haptic Config Hosting</div>
+    <h1>Config Catalog</h1>
+    <p class="sub">Browse and grab haptic configs. Click a config to download its <code>.json.zip</code>, or copy the direct URL to load it elsewhere.</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="controls">
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="q" type="search" placeholder="Search configs by name or author…" autocomplete="off" aria-label="Search configs">
+    </div>
+    <div class="count" id="count"></div>
+  </div>
+
+  <div id="results"></div>
+</div>
+
+<footer>
+  <div class="wrap">Source of truth: <code>catalog.json</code> · regenerate it and this page updates itself.</div>
+</footer>
+
+<script>
+const results = document.getElementById('results');
+const countEl = document.getElementById('count');
+const q = document.getElementById('q');
+let catalog = [];
+
+function showState(html){ results.innerHTML = `<div class="state">${html}</div>`; countEl.textContent=''; }
+
+function absUrl(rel){ try { return new URL(rel, location.href).href; } catch { return rel; } }
+function esc(s){ return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+function render(items){
+  if(!items.length){
+    showState(`<h3>No matches</h3><p>Nothing matches that search. Try a different name or clear the box.</p>`);
+    return;
+  }
+  // Group by author
+  const groups = {};
+  for(const it of items){ (groups[it.author||'Unknown'] ||= []).push(it); }
+
+  results.innerHTML = Object.entries(groups).map(([author, list]) => `
+    <section class="group">
+      <div class="group-head"><h2>${esc(author)}</h2><span>${list.length} config${list.length>1?'s':''}</span></div>
+      ${list.map(it => {
+        const href = esc(absUrl(it.url));
+        return `
+        <div class="row">
+          <span class="indicator" aria-hidden="true"></span>
+          <div class="info">
+            <div class="name">${esc(it.name)}</div>
+            <div class="meta">
+              <span class="ver">v${esc(it.version)}</span>
+              <span>schema ${esc(it.schemaVersion)}</span>
+            </div>
+          </div>
+          <div class="actions">
+            <button class="act copy" data-url="${href}" type="button">Copy URL</button>
+            <a class="act dl" href="${esc(it.url)}" download>Download</a>
+          </div>
+        </div>`;
+      }).join('')}
+    </section>
+  `).join('');
+
+  const total = catalog.length;
+  countEl.innerHTML = items.length===total
+    ? `<b>${total}</b> configs`
+    : `<b>${items.length}</b> of ${total}`;
+}
+
+function filter(){
+  const term = q.value.trim().toLowerCase();
+  if(!term){ render(catalog); return; }
+  render(catalog.filter(it =>
+    (it.name||'').toLowerCase().includes(term) ||
+    (it.author||'').toLowerCase().includes(term)
+  ));
+}
+
+results.addEventListener('click', e => {
+  const btn = e.target.closest('.copy');
+  if(!btn) return;
+  navigator.clipboard.writeText(btn.dataset.url).then(()=>{
+    const old = btn.textContent;
+    btn.textContent = 'Copied'; btn.classList.add('copied');
+    setTimeout(()=>{ btn.textContent = old; btn.classList.remove('copied'); }, 1400);
+  });
+});
+q.addEventListener('input', filter);
+
+showState('<div class="spinner"></div>Loading catalog…');
+fetch('catalog.json', {cache:'no-store'})
+  .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
+  .then(data => {
+    catalog = Array.isArray(data) ? data : [];
+    if(!catalog.length){ showState(`<h3>Catalog is empty</h3><p>No configs are listed yet. Add entries to <code>catalog.json</code> and reload.</p>`); return; }
+    catalog.sort((a,b)=> (a.author||'').localeCompare(b.author||'') || (a.name||'').localeCompare(b.name||''));
+    render(catalog);
+  })
+  .catch(err => {
+    showState(`<h3>Couldn't load the catalog</h3><p>Fetching <code>catalog.json</code> failed (${esc(err.message)}). Confirm the file sits next to this page and reload.</p>`);
+  });
+</script>
+</body>
+</html>
