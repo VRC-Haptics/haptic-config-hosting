@@ -1,0 +1,1 @@
+Anything in this directory or in the root directory is skipped for archiving.

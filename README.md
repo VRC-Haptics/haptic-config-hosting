@@ -1,10 +1,10 @@
 # haptic-config-hosting
-Repository containing publicly available haptic configurations. Will be move to an actual endpoint eventually.
+This repository archives the different hosted maps and provides the website for browsing/downloading them.
+[Official Website](https://vrhaptics.dedyn.io/): Browse and download published configs.
 
+archive.zip is updated semi-regularly and records different changes that happen on the serving host.
 
-To get your custom Config's added:
-1. Create a PR adding your maps under a new folder with your screen name under the `/configs/<Your_Name>` folder.
-2. Send me a message on Discord: @is_average and I will get you set up.
+`site/index.html` is the entry point for the website.
 
-**PLEASE NOTE:** Until there's enough users to justify infrastructure costs, I will have to keep track of who is allowed to edit what. 
-DO NOT JUST EDIT ANOTHER PERSONS CONFIG FILE AND EXPECT IT TO GET MERGED.
+in-deployment the `site/catalog.json` is next to the site's entry point. it allows for resolving to actual links to the further information.
+Extracting an archive.zip into the `/site` directory results in the in-deployment setup for that snap-shot.
